@@ -26,7 +26,7 @@ const ImagePoster = () => {
   useState(() => {
     setInterval(() => {
       setPoster((poster) => {
-        if (poster === 5) {
+        if (poster === 2) {
           return 1;
         } else {
           return poster + 1;
@@ -34,10 +34,10 @@ const ImagePoster = () => {
       });
     }, posterChangeTime);
   }, [poster]);
-  const posterPath = `./posters/${poster}.jpeg`;
+  const posterPath = `./posters/${poster}.jpg`;
   return (
-    <div className={styles.posterImage}>
-      <img src={posterPath} className="App-logo" alt={posterPath} />
+    <div>
+      <img className={styles.posterImage} src={posterPath} alt={posterPath} />
     </div>
   );
 };
@@ -52,35 +52,107 @@ const FajarTime = () => {
   );
 };
 
-const ZoharTime = () => {};
+const ZoharTime = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
 
-const AsarTime = () => {};
+const AsarTime = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
 
-const MaghribTime = () => {};
-const IshaTime = () => {};
-const Jummah = () => {};
+const MaghribTime = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
+const IshaTime = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
+const Jummah = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
 
-const SehriTime = () => {};
+const SehriTime = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Beginingssssssssssss 5:00</p>
+    </div>
+  );
+};
 
-const Sunrise = () => {};
-const Zawal = () => {};
+const Sunrise = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
+const Zawal = () => {
+  return (
+    <div className={styles.prayerDetails}>
+      <p>Fajar</p>
+      <p>5:00 AM</p>
+      <p>Begining 5:00</p>
+    </div>
+  );
+};
 
 function App() {
   return (
     <div className={styles.body}>
       <Header />
       <div className={styles.information}>
-        <ImagePoster />
+        <div>
+          <ImagePoster />
+        </div>
         <div className={styles.timeTable}>
-          <FajarTime />
-          <ZoharTime />
-          <AsarTime />
-          <MaghribTime />
-          <IshaTime />
-          <Jummah />
-          <SehriTime />
-          <Sunrise />
-          <Zawal />
+          <div className={styles.prayerRow}>
+            <FajarTime />
+            <ZoharTime />
+            <AsarTime />
+          </div>
+          <div className={styles.prayerRow}>
+            <MaghribTime />
+            <IshaTime />
+            <Jummah />
+          </div>
+          <div className={styles.prayerRow}>
+            <SehriTime />
+            <Sunrise />
+            <Zawal />
+          </div>
         </div>
       </div>
     </div>
