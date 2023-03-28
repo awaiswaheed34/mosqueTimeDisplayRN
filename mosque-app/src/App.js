@@ -138,6 +138,8 @@ function App() {
           <ImagePoster />
           {/* add responsiveness */}
           {/* add responsiveness */}
+          {/* add responsiveness */}
+          {/* add responsiveness */}
         </div>
         <div className={styles.timeTable}>
           <div className={styles.prayerRow}>
