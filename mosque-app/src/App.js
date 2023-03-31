@@ -146,6 +146,7 @@ function App() {
           <div className={styles.prayerRow}>
             <MaghribTime />
             <IshaTime />
+            <IshaTime />
             <Jummah />
           </div>
           <div className={styles.prayerRow}>
