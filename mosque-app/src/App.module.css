@@ -1,6 +1,8 @@
 .body {
   padding: 40px;
   background-color: rgb(26, 34, 25);
+  height: 100vh;
+  max-height: 100vh;
 }
 .topHeader {
   display: flex;
@@ -41,8 +43,9 @@
 
 .posterImage {
   flex: 0.5;
-  width: 50%;
-  height: 100%;
+  width: 600px;
+  height: 600px;
+
   background-color: #e5e5e5;
   border: 5px solid rgb(192, 18, 18);
   display: flex;
@@ -58,9 +61,8 @@
 }
 
 .timeTable {
-  flex: 0.5;
   width: 50%;
-  height: 100%;
+
   display: flex;
   flex-direction: column;
   border: 6px solid red;

@@ -42,10 +42,10 @@ const ImagePoster = () => {
   );
 };
 
-const FajarTime = () => {
+const ZuharTime = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -55,7 +55,7 @@ const FajarTime = () => {
 const ZoharTime = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -65,7 +65,7 @@ const ZoharTime = () => {
 const AsarTime = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -75,7 +75,7 @@ const AsarTime = () => {
 const MaghribTime = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -84,7 +84,7 @@ const MaghribTime = () => {
 const IshaTime = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -93,7 +93,7 @@ const IshaTime = () => {
 const Jummah = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -103,7 +103,7 @@ const Jummah = () => {
 const SehriTime = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Beginingssssssssssss 5:00</p>
     </div>
@@ -113,7 +113,7 @@ const SehriTime = () => {
 const Sunrise = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -122,7 +122,7 @@ const Sunrise = () => {
 const Zawal = () => {
   return (
     <div className={styles.prayerDetails}>
-      <p>Fajar</p>
+      <p>Zuhar</p>
       <p>5:00 AM</p>
       <p>Begining 5:00</p>
     </div>
@@ -137,10 +137,11 @@ function App() {
         <div>
           <ImagePoster />
           {/* add responsiveness */}
+          {/* add responsiveness */}
         </div>
         <div className={styles.timeTable}>
           <div className={styles.prayerRow}>
-            <FajarTime />
+            <ZuharTime />
             <ZoharTime />
             <AsarTime />
           </div>
