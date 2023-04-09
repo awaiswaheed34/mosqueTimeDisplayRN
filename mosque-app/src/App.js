@@ -21,7 +21,7 @@ const Header = () => {
 
 const ImagePoster = () => {
   const [poster, setPoster] = useState(1);
-  //change poster every 60 seconds
+  //change poster every 2 seconds
   const posterChangeTime = 2 * 1000;
   useState(() => {
     setInterval(() => {
